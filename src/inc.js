@@ -2,15 +2,6 @@ import React, {useState} from "react";
 
 function Counter() {
     const [count, setCount] = useState(0); 
-
-    function remNegative() {
-        if({count} = 0) {
-            return 0;
-        };
-        if({count} >= 1) {
-            return count - 1
-        };
-    };
     return (
         <div className='counter'>
             <p>{count}</p>
@@ -18,6 +9,16 @@ function Counter() {
             <button onClick={() => setCount(remNegative())} id='Btn'>Decrease</button>
         </div>
     );
+
+    function remNegative() {
+        if({count} = 0) {
+            return 0;
+        }
+        if({count} > 0) {
+            return count - 1
+        }
+    };
 }
+
 
 export default Counter;

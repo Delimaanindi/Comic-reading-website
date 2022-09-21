@@ -18,14 +18,36 @@ code {
 
 #Btn {
   align-items: center;
-  margin: auto 0 10px 5px;
+  margin: auto 0 10px 10px;
   background-color: beige;
-  border: 2px solid bisque;
+  border: 1px solid bisque;
+  box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
 }
 
 #Btn:hover {
   align-items: center;
-  margin: auto 0 10px 5px;
+  margin: auto 0 10px 10px;
   background-color: rgb(255, 255, 255);
-  border: 2px solid bisque;
+  border: 1px solid bisque;
+  transform: scale(0.95);
+}
+
+.exitBtn {
+  margin-left: 49%;
+  background-color: beige;
+  border: 1px solid bisque;
+  margin-bottom: 5px;
+  box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.exitBtn:hover {
+  margin-left: 49%;
+  background-color: rgb(255, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  margin-bottom: 5px;
+  box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  transform: scale(0.95);
 }
