@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.counter {
+  text-align: center;
+}
+
+#Btn {
+  align-items: center;
+  margin: auto 0 10px 5px;
+  background-color: beige;
+  border: 2px solid bisque;
+}
+
+#Btn:hover {
+  align-items: center;
+  margin: auto 0 10px 5px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid bisque;
+}
