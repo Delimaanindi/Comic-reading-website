@@ -1,0 +1,19 @@
+#navbrand {
+  width: 50px;
+  height: 45px;
+}
+
+.navhead {
+  background: linear-gradient(to bottom, rgb(218, 74, 8), rgb(227, 154, 80)) ;
+}
+.link {
+  font-weight: bold;
+}
+.link:hover {
+  background: rgb(255, 201, 53);
+  border-radius: 5px;
+}
+
+
+
+

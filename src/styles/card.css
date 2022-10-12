@@ -1,0 +1,45 @@
+.cardcont {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 680px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 1px rgba(60, 60, 60, 0.2);
+    margin-right: 15px;
+
+}
+.comicList {
+    display: flex;
+    flex-direction: row;
+    margin-left: 18px;
+    margin-top: 25px;
+}
+.comicthumb {
+    margin-left: 20px;
+    margin-top: 10px;
+    visibility: visible;
+    width: 260px;
+    height: 380px;
+}
+
+#title {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+#synopsis{
+    margin-top: 15px;
+    width: 250px;
+    margin-left: 20px;
+}
+
+#rating {
+    width: 130px;
+    height: 30px;
+    margin-left: 20px;
+}
+#readBtn {
+    width: 100px;
+    margin-left: 20px;
+    margin-top: 15px;
+}

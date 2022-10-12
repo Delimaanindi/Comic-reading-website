@@ -1,0 +1,98 @@
+.background {
+    background-image: url('../backcom.webp');
+    height: 900px;
+    margin-top: 0px;
+}
+.containers {
+    width: 400px;
+    height: 500px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 600px;
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.1);
+    margin-top: -720px;
+    background-color: #fff;
+}
+
+#titles {
+    font-weight: bold;
+    padding-top: 30px;
+    padding-left: 150px;
+    padding-bottom: 15px;
+}
+
+.labell {
+    padding-bottom: 5px;
+    font-weight: bold;
+    color: rgb(232, 100, 18);
+}
+
+.inputs {
+    margin-bottom: 10px;
+    width: 300px;
+    height: 40px;
+    border: 1px solid rgba(232, 100, 18, 0.5);
+    border-radius: 4px;
+}
+
+::placeholder {
+   color: rgba(232, 100, 18, 0.5)
+}
+
+#loginBtn {
+    margin-top: 50px;
+    border: none;
+    box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.2);
+    background: rgba(232, 100, 18, 0.7);
+    font-weight: bold;
+    border-radius: 4px;
+    width: 150px;
+    height: 50px;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+#loginBtn:hover {
+    margin-top: 50px;
+    border: none;
+    box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.2);
+    background: rgba(244, 128, 56, 0.7);
+    font-weight: bold;
+    border-radius: 4px;
+    width: 150px;
+    height: 50px;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+#loginBtn:active {
+    margin-top: 50px;
+    border: none;
+    box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.2);
+    background: rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 4px;
+    width: 150px;
+    height: 50px;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.rememberme {
+    margin-left: -155px;
+    margin-top:20px;
+}
+.labelr {
+    font-weight: bold;
+    color: rgb(232, 100, 18);
+}
+.check {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    background: rgb(232, 100, 18);
+    border-radius: 4px;
+}
+
+#createlink {
+    text-decoration: none;
+}
