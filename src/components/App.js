@@ -5,9 +5,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Homepage from './homepage';
 import Any from './any';
 import Regis from './register';
-import Login from './login';
-
-
+import Loginp from './login';
 
 function App() {
   return (
@@ -16,7 +14,7 @@ function App() {
         <Route path='/' element={<Homepage />}/>
         <Route exact path='/stories' element={<Any />}/>
         <Route exact path='/create' element={<Regis />}/>
-        <Route exact path='/login' element={<Login />}/>
+        <Route exact path='/loginp' element={<Loginp />}/>
       </Routes>
     </Router>
   );

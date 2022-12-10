@@ -4,10 +4,13 @@ import Comiccard from './comiccard';
 import '../styles/tab.css'
 import '../styles/card.css'
 import icontab from '../hot.png'
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 export default function Filtertab() {
     const [data, setData] = useState(Comics);
     const [input, setInput] = useState('');
+    const [loading, setLoading] = useState(false)
     // const [select, setSelected] = useState('all');
 
     const filterdata = (cateData) => {
@@ -16,6 +19,7 @@ export default function Filtertab() {
         });
   
         setData(filteredData);
+        setLoading(false)
     };
 
     return( 
@@ -42,23 +46,25 @@ export default function Filtertab() {
         <button className='tabBtn' id="latest"
         onClick={() => filterdata('latest')}><b>Latest Updates</b></button>
         </div>
-
-        <div className='comicList' key={data.id}>
-        {data.filter((data) => {
-              if(!data || !data.title) {
-                return false;
-            };
-            return data.title.toLowerCase().includes(input)
-            }).map(d => 
-              (
-              <Comiccard key={d.id}
-              image={d.image}
-              title={d.title}
-              synopsis={d.synopsis}
-              />
-              )
-           )}
-        </div>
+        {loading && (<Skeleton />)}
+          <div className='comicList' key={data.id}>
+          {data.filter((data) => {
+                if(!data || !data.title) {
+                  return false;
+              };
+              return data.title.toLowerCase().includes(input)
+              }).map(d => 
+                (
+                <Comiccard key={d.id}
+                image={d.image}
+                title={d.title}
+                synopsis={d.synopsis}
+                />
+                )
+             )}
+          </div>
+        )
+        
         
         </>
     )

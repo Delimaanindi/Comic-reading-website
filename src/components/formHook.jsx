@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import {useState} from "react";
 import Correctval from './correctval';
 import validation from "./validation";
 
@@ -14,6 +14,7 @@ export default function FormHook() {
 
     const[errors, setErrors] = useState({});
     const [correct, setCorrect] = useState({});
+    const [submitted, setSubmited] = useState(false);
 
     const handleChange = (e) => {
         setValue({
@@ -26,6 +27,7 @@ export default function FormHook() {
         e.preventDefault();
         setErrors(validation(value));
         setCorrect(Correctval(value));
+        setSubmited(true)
     };
 
     // useEffect(() => {
@@ -34,5 +36,5 @@ export default function FormHook() {
     //     };
     // }, [errors]);
 
-    return {handleChange, handleSubmit, value, errors, correct};
+    return {handleChange, handleSubmit, value, errors, correct, submitted};
 }

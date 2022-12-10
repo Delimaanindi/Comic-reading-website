@@ -1,7 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 import '../styles/regis.css'
+import { useState } from 'react';
 
 export default function Regisdone() {
+    
+
     return(
         <>
         <div className="container">
