@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button';
 
 
 export default function Comiccard(props) {
+    // props of cards
     const {image, title, synopsis} = props;
 
     return(
