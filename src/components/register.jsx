@@ -10,6 +10,7 @@ export default function Regis(submitForm) {
         alert("choose your fav color!");
         setClicked(true)
     }
+    // passing validation props
     const {handleChange, handleSubmit, errors, correct, value, submitted} = FormHook(submitForm);
 
     return (
